@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Head from 'next/head';
 import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
@@ -31,6 +32,21 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <Head>
+          <title>{db.title}</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content={db.description} />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={db.title} />
+          <meta property="og:description" content={db.description} />
+          <meta property="og:image" content={db.bg} />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:title" content={db.title} />
+          <meta property="twitter:description" content={db.description} />
+          <meta property="twitter:image" content={db.bg} />
+        </Head>
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>

@@ -22,16 +22,16 @@ export default function Home() {
       <QuizContainer>
         <Widget>
           <Widget.Header>
-            <h1>The Legend of Zelda</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>lorem impsum dolor met it...</p>
+            <p>{db.description}</p>
           </Widget.Content>
         </Widget>
         <Widget>
           <Widget.Content>
-            <h1>The Legend of Zelda</h1>
-            <p>lorem impsum dolor met it...</p>
+            <h1>{db.title}</h1>
+            <p>{db.description}</p>
           </Widget.Content>
         </Widget>
         <Footer />
