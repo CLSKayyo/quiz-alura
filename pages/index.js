@@ -36,7 +36,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="//github.com/clskayyo" />
+      <GitHubCorner projectUrl="//github.com/CLSKayyo/quiz-alura" />
     </BackgroundImage>
   );
 }
