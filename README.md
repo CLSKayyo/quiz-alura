@@ -8,3 +8,8 @@ Projeto criado para a Imersão Alura React Next.js, onde são ensinadas em um in
 * Explicação sobre Styled Components
 * Layout básico da aplicação
 * Deploy da aplicação na plataforma [Vercel](https://vercel.com/solutions/nextjs?utm_source=next-site&utm_medium=banner&utm_campaign=next-website)
+
+### Dia 2 (26/01/2021)
+* Utilização do ESLint e conhecimentos sobre linting
+* Gerenciamento de States com hooks
+* Implementação de rotas com next/router
